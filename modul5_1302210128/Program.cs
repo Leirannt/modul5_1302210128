@@ -2,11 +2,19 @@
 
 namespace modul5_1302210128
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        public class HaloGeneric
         {
-            Console.WriteLine("Hello World!");
+            public static void sapaUser<T>(T inputuser)
+            {
+                Console.WriteLine("Hallo user " + inputuser);
+            }
+        }
+
+        private static void Main(string[] args)
+        {
+            HaloGeneric.sapaUser<string>("Ariel");
         }
     }
 }
